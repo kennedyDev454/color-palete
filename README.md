@@ -17,7 +17,7 @@
 <br>
 
 <p align="center">
-  <img alt="projeto color palettes " src="./assets/" width="100%">
+  <img alt="projeto color palettes " src="./assets/preview.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias

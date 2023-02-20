@@ -28,6 +28,10 @@ header{
     padding: 1rem;
 }
 
+header h1{
+    text-transform: uppercase;
+}
+
 
 
 .container{
