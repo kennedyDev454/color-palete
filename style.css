@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+
+img, svg{
+    max-width: 100%;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+header{
+    text-align: center;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 1rem;
+}
+
+
+
+.container{
+    width: min(calc(100% - 2rem), 64rem);
+    margin: auto;
+    padding: 7rem 0;
+    
+}
+
+.colors{
+    display: flex;
+}
+
+.color{
+    height: 50vh;
+    flex: 1;
+    padding: 0.5rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.color h3{
+    cursor: pointer;
+}
+
+.generator{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.library , .btn-generator{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.library button, .btn-generator button{
+    border: none;
+    background-color: none;
+    background-color: rgb(37, 36, 36);
+    padding: 0.2rem 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+   
+}
+
+.library-color{
+    background-color: rgba(28, 28, 28, 0.944);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.library-color .content{
+    background-color: white;
+    width: max(10rem,25rem);
+    height: 40vh;
+    overflow-y: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    position: relative;
+}
+
+.library-color.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+.library-color .content span{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+}
+
+.library-color .text-color {
+    display: flex;
+    flex-direction: column;
+  
+}
+.library-color .text-color div{
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+
+.library-color .text-color i{
+    cursor: pointer;
+}
+
+
+.library-color .text-color p{
+    margin-block: .5rem;
+    font-weight: 600;
+}
+
+
+.popup-message{
+    position: absolute;
+    top: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.604);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 10;
+}
+
+.popup-message .message{
+    background-color: white;
+    width: max(10rem,25rem);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20vh;
+    text-transform: uppercase;
+    border-radius: 1rem;
+}
+
+.popup-message.active{
+    opacity: 1;
+    visibility: visible;
+}
+
+
+
+
+@media screen and (max-width:700px){
+    .colors{
+        flex-direction: column;
+    }
+    .color{
+        flex: none;
+        height: auto;
+        padding: 1rem;
+    }
+}
