@@ -32,7 +32,6 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 O Genetate colors é um projeto onde você consegue gerar e copiar cores.
 
-- [Visite o projeto online]
 
 
 ## :memo: Licença
